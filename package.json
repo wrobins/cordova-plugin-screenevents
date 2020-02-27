@@ -1,0 +1,41 @@
+{
+    "name": "cordova-plugin-screenevents",
+    "version": "0.1.0",
+    "description": "Trigger events based on your device's screen state!",
+    "cordova": {
+      "id": "cordova-plugin-screenevents",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/wrobins/cordova-plugin-screenevents.git"
+    },
+    "keywords": [
+      "cordova",
+      "cordova-android",
+      "cordova-ios",
+      "screen",
+      "event",
+      "events",
+      "app",
+      "state",
+      "on",
+      "off",
+      "ecosystem:cordova"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=7.0.0"
+      }
+    ],
+    "author": "Walter Robins <wrobins@kent.edu>",
+    "license": "Apache 2.0",
+    "bugs": {
+      "url": "https://github.com/wrobins/cordova-plugin-screenevents/issues"
+    },
+    "homepage": "https://github.com/wrobins/cordova-plugin-screenevents"
+  }
