@@ -13,13 +13,13 @@ window.cordova.plugins.ScreenEvents.listenerInit(function(msg) {
     // Handle success event here
     window.cordova.plugins.ScreenEvents.listenerInit(function(msg) {
         // Handle success event again
-        }, function(msg) {
+        }, function(err) {
         // Handle fail event here
         });
-    }, function(msg) {
+    }, function(err) {
     // Handle fail event here
 });
 ```
 You probably want "Success event" and "fail event" logic to be function calls to avoid duplicate code since you'll have to reference each twice.
 
-The msg variable will be a string, and one of three things: in a success scenario, it will be either "SCREEN_TURNED_ON" or "SCREEN_TURNED_OFF" which should be self-explanatory. Otherwise, in a failure scenario it will be whatever exception message your device's native platform decides to conjure.
+The msg variable will be a string, and one of two things: in a success scenario, it will be either "SCREEN_TURNED_ON" or "SCREEN_TURNED_OFF" which should be self-explanatory. Otherwise, in a failure scenario the err will be a string of whatever exception message your device's native platform decides to conjure.

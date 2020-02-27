@@ -26,10 +26,10 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="ScreenEvents">
-                <param name="ios-package" value="CDVScreenEvents"/>
+                <param name="ios-package" value="ScreenEvents"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CDVScreenEvents.h" />
-        <source-file src="src/ios/CDVScreenEvents.m" />
+        <header-file src="src/ios/ScreenEvents.h" />
+        <source-file src="src/ios/ScreenEvents.m" />
     </platform>
 </plugin>
