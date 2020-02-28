@@ -28,8 +28,10 @@ public class ScreenEvents extends CordovaPlugin {
             String action = intent.getAction();
             if (Intent.ACTION_SCREEN_ON.equals(action)) {
                 ScreenEvents.this.callbackContext.success(SCREEN_TURNED_ON);
+                activity.unregisterReceiver(this);
             } else if (Intent.ACTION_SCREEN_OFF.equals(action)) {
                 ScreenEvents.this.callbackContext.success(SCREEN_TURNED_OFF);
+                activity.unregisterReceiver(this);
             }
         }
     }

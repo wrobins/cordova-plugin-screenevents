@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-screenevents",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Trigger events based on your device's screen state!",
     "cordova": {
       "id": "cordova-plugin-screenevents",
