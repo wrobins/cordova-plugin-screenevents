@@ -9,13 +9,17 @@ cordova plugin add cordova-plugin-screenevents
 ## How do I use it?
 Cordova plugin calls expect a single callback event, so I suggest you set up a listener similar to the code below:
 ```js
-window.cordova.plugins.ScreenEvents.listenerInit(function(msg) {
-    // Handle success event here
+function success(msg) {
+    // Handle your success event here with the msg
+    // Restart the listener
     window.cordova.plugins.ScreenEvents.listenerInit(function(msg) {
-        // Handle success event again
-        }, function(err) {
-        // Handle fail event here
-        });
+        success(msg);
+    }, function(err) {
+        // Handle fail event again here
+    });
+}
+window.cordova.plugins.ScreenEvents.listenerInit(function(msg) {
+    success(msg);
     }, function(err) {
     // Handle fail event here
 });
